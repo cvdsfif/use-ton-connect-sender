@@ -19,7 +19,7 @@ export const useTonContract = <T extends Contract>(
         const address = Address.parse(unparsedAddress.toString())
         console.log(`Address parsed: {${address.toString()}}`)
         const openedContract = client.open(factory.fromAddress(address)) as OpenedContract<T>
-        console.log(`Contract opened: {${openedContract.address.toString()}}`)
+        console.log(`Contract opened`)
         return openedContract
     }, [client])
     return contract
