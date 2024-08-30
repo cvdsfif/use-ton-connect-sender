@@ -1,18 +1,18 @@
-import { 
+import {
     Cell,
-    Slice, 
-    Address, 
-    Builder, 
-    beginCell, 
-    ComputeError, 
-    TupleItem, 
-    TupleReader, 
-    Dictionary, 
-    contractAddress, 
-    ContractProvider, 
-    Sender, 
-    Contract, 
-    ContractABI, 
+    Slice,
+    Address,
+    Builder,
+    beginCell,
+    ComputeError,
+    TupleItem,
+    TupleReader,
+    Dictionary,
+    contractAddress,
+    ContractProvider,
+    Sender,
+    Contract,
+    ContractABI,
     ABIType,
     ABIGetter,
     ABIReceiver,
@@ -607,7 +607,7 @@ function dictValueParserNzComTact$Data(): DictionaryValue<NzComTact$Data> {
     }
 }
 
- type NzComTact_init_args = {
+type NzComTact_init_args = {
     $$type: 'NzComTact_init_args';
     id: bigint;
 }
@@ -658,23 +658,23 @@ const NzComTact_errors: { [key: number]: { message: string } } = {
 }
 
 const NzComTact_types: ABIType[] = [
-    {"name":"StateInit","header":null,"fields":[{"name":"code","type":{"kind":"simple","type":"cell","optional":false}},{"name":"data","type":{"kind":"simple","type":"cell","optional":false}}]},
-    {"name":"Context","header":null,"fields":[{"name":"bounced","type":{"kind":"simple","type":"bool","optional":false}},{"name":"sender","type":{"kind":"simple","type":"address","optional":false}},{"name":"value","type":{"kind":"simple","type":"int","optional":false,"format":257}},{"name":"raw","type":{"kind":"simple","type":"slice","optional":false}}]},
-    {"name":"SendParameters","header":null,"fields":[{"name":"bounce","type":{"kind":"simple","type":"bool","optional":false}},{"name":"to","type":{"kind":"simple","type":"address","optional":false}},{"name":"value","type":{"kind":"simple","type":"int","optional":false,"format":257}},{"name":"mode","type":{"kind":"simple","type":"int","optional":false,"format":257}},{"name":"body","type":{"kind":"simple","type":"cell","optional":true}},{"name":"code","type":{"kind":"simple","type":"cell","optional":true}},{"name":"data","type":{"kind":"simple","type":"cell","optional":true}}]},
-    {"name":"Deploy","header":2490013878,"fields":[{"name":"queryId","type":{"kind":"simple","type":"uint","optional":false,"format":64}}]},
-    {"name":"DeployOk","header":2952335191,"fields":[{"name":"queryId","type":{"kind":"simple","type":"uint","optional":false,"format":64}}]},
-    {"name":"FactoryDeploy","header":1829761339,"fields":[{"name":"queryId","type":{"kind":"simple","type":"uint","optional":false,"format":64}},{"name":"cashback","type":{"kind":"simple","type":"address","optional":false}}]},
-    {"name":"ChangeOwner","header":2174598809,"fields":[{"name":"queryId","type":{"kind":"simple","type":"uint","optional":false,"format":64}},{"name":"newOwner","type":{"kind":"simple","type":"address","optional":false}}]},
-    {"name":"ChangeOwnerOk","header":846932810,"fields":[{"name":"queryId","type":{"kind":"simple","type":"uint","optional":false,"format":64}},{"name":"newOwner","type":{"kind":"simple","type":"address","optional":false}}]},
-    {"name":"Deposit","header":1243991607,"fields":[]},
-    {"name":"Withdrawal","header":1037167896,"fields":[{"name":"amount","type":{"kind":"simple","type":"uint","optional":false,"format":"coins"}}]},
-    {"name":"NzComTact$Data","header":null,"fields":[{"name":"id","type":{"kind":"simple","type":"int","optional":false,"format":32}},{"name":"owner","type":{"kind":"simple","type":"address","optional":false}}]},
+    { "name": "StateInit", "header": null, "fields": [{ "name": "code", "type": { "kind": "simple", "type": "cell", "optional": false } }, { "name": "data", "type": { "kind": "simple", "type": "cell", "optional": false } }] },
+    { "name": "Context", "header": null, "fields": [{ "name": "bounced", "type": { "kind": "simple", "type": "bool", "optional": false } }, { "name": "sender", "type": { "kind": "simple", "type": "address", "optional": false } }, { "name": "value", "type": { "kind": "simple", "type": "int", "optional": false, "format": 257 } }, { "name": "raw", "type": { "kind": "simple", "type": "slice", "optional": false } }] },
+    { "name": "SendParameters", "header": null, "fields": [{ "name": "bounce", "type": { "kind": "simple", "type": "bool", "optional": false } }, { "name": "to", "type": { "kind": "simple", "type": "address", "optional": false } }, { "name": "value", "type": { "kind": "simple", "type": "int", "optional": false, "format": 257 } }, { "name": "mode", "type": { "kind": "simple", "type": "int", "optional": false, "format": 257 } }, { "name": "body", "type": { "kind": "simple", "type": "cell", "optional": true } }, { "name": "code", "type": { "kind": "simple", "type": "cell", "optional": true } }, { "name": "data", "type": { "kind": "simple", "type": "cell", "optional": true } }] },
+    { "name": "Deploy", "header": 2490013878, "fields": [{ "name": "queryId", "type": { "kind": "simple", "type": "uint", "optional": false, "format": 64 } }] },
+    { "name": "DeployOk", "header": 2952335191, "fields": [{ "name": "queryId", "type": { "kind": "simple", "type": "uint", "optional": false, "format": 64 } }] },
+    { "name": "FactoryDeploy", "header": 1829761339, "fields": [{ "name": "queryId", "type": { "kind": "simple", "type": "uint", "optional": false, "format": 64 } }, { "name": "cashback", "type": { "kind": "simple", "type": "address", "optional": false } }] },
+    { "name": "ChangeOwner", "header": 2174598809, "fields": [{ "name": "queryId", "type": { "kind": "simple", "type": "uint", "optional": false, "format": 64 } }, { "name": "newOwner", "type": { "kind": "simple", "type": "address", "optional": false } }] },
+    { "name": "ChangeOwnerOk", "header": 846932810, "fields": [{ "name": "queryId", "type": { "kind": "simple", "type": "uint", "optional": false, "format": 64 } }, { "name": "newOwner", "type": { "kind": "simple", "type": "address", "optional": false } }] },
+    { "name": "Deposit", "header": 1243991607, "fields": [] },
+    { "name": "Withdrawal", "header": 1037167896, "fields": [{ "name": "amount", "type": { "kind": "simple", "type": "uint", "optional": false, "format": "coins" } }] },
+    { "name": "NzComTact$Data", "header": null, "fields": [{ "name": "id", "type": { "kind": "simple", "type": "int", "optional": false, "format": 32 } }, { "name": "owner", "type": { "kind": "simple", "type": "address", "optional": false } }] },
 ]
 
 const NzComTact_getters: ABIGetter[] = [
-    {"name":"balance","arguments":[],"returnType":{"kind":"simple","type":"int","optional":false,"format":257}},
-    {"name":"id","arguments":[],"returnType":{"kind":"simple","type":"int","optional":false,"format":257}},
-    {"name":"owner","arguments":[],"returnType":{"kind":"simple","type":"address","optional":false}},
+    { "name": "balance", "arguments": [], "returnType": { "kind": "simple", "type": "int", "optional": false, "format": 257 } },
+    { "name": "id", "arguments": [], "returnType": { "kind": "simple", "type": "int", "optional": false, "format": 257 } },
+    { "name": "owner", "arguments": [], "returnType": { "kind": "simple", "type": "address", "optional": false } },
 ]
 
 export const NzComTact_getterMapping: { [key: string]: string } = {
@@ -684,43 +684,46 @@ export const NzComTact_getterMapping: { [key: string]: string } = {
 }
 
 const NzComTact_receivers: ABIReceiver[] = [
-    {"receiver":"internal","message":{"kind":"typed","type":"Deposit"}},
-    {"receiver":"internal","message":{"kind":"typed","type":"Withdrawal"}},
-    {"receiver":"internal","message":{"kind":"typed","type":"Deploy"}},
+    { "receiver": "internal", "message": { "kind": "typed", "type": "Deposit" } },
+    { "receiver": "internal", "message": { "kind": "typed", "type": "Withdrawal" } },
+    { "receiver": "internal", "message": { "kind": "typed", "type": "Deploy" } },
 ]
 
 export class NzComTact implements Contract {
-    
+
     static async init(id: bigint) {
         return await NzComTact_init(id);
     }
-    
+
     static async fromInit(id: bigint) {
         const init = await NzComTact_init(id);
         const address = contractAddress(0, init);
         return new NzComTact(address, init);
     }
-    
+
     static fromAddress(address: Address) {
+        console.log("From address", address)
+        const contract = new NzComTact(address);
+        console.log("Contract", contract)
         return new NzComTact(address);
     }
-    
-    readonly address: Address; 
+
+    readonly address: Address;
     readonly init?: { code: Cell, data: Cell };
     readonly abi: ContractABI = {
-        types:  NzComTact_types,
+        types: NzComTact_types,
         getters: NzComTact_getters,
         receivers: NzComTact_receivers,
         errors: NzComTact_errors,
     };
-    
+
     private constructor(address: Address, init?: { code: Cell, data: Cell }) {
         this.address = address;
         this.init = init;
     }
-    
-    async send(provider: ContractProvider, via: Sender, args: { value: bigint, bounce?: boolean| null | undefined }, message: Deposit | Withdrawal | Deploy) {
-        
+
+    async send(provider: ContractProvider, via: Sender, args: { value: bigint, bounce?: boolean | null | undefined }, message: Deposit | Withdrawal | Deploy) {
+
         let body: Cell | null = null;
         if (message && typeof message === 'object' && !(message instanceof Slice) && message.$$type === 'Deposit') {
             body = beginCell().store(storeDeposit(message)).endCell();
@@ -732,30 +735,30 @@ export class NzComTact implements Contract {
             body = beginCell().store(storeDeploy(message)).endCell();
         }
         if (body === null) { throw new Error('Invalid message type'); }
-        
+
         await provider.internal(via, { ...args, body: body });
-        
+
     }
-    
+
     async getBalance(provider: ContractProvider) {
         let builder = new TupleBuilder();
         let source = (await provider.get('balance', builder.build())).stack;
         let result = source.readBigNumber();
         return result;
     }
-    
+
     async getId(provider: ContractProvider) {
         let builder = new TupleBuilder();
         let source = (await provider.get('id', builder.build())).stack;
         let result = source.readBigNumber();
         return result;
     }
-    
+
     async getOwner(provider: ContractProvider) {
         let builder = new TupleBuilder();
         let source = (await provider.get('owner', builder.build())).stack;
         let result = source.readAddress();
         return result;
     }
-    
+
 }
