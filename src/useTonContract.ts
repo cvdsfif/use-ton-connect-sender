@@ -16,8 +16,10 @@ export const useTonContract = <T extends Contract>(
     const contract = useAsyncInitialize(async () => {
         if (!client) return
         console.log(`Parsing address: {${unparsedAddress}}`)
-        const address = Address.parse(unparsedAddress)
+        const address = Address.parse(unparsedAddress.toString())
+        console.log(`Address parsed: {${address.toString()}}`)
         const openedContract = client.open(factory.fromAddress(address)) as OpenedContract<T>
+        console.log(`Contract opened: {${openedContract.address.toString()}}`)
         return openedContract
     }, [client])
     return contract
