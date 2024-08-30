@@ -19,7 +19,7 @@
   ],
   "author": "Nikit Zykov",
   "license": "ISC",
-  "description": "Helper TON contracts to make a bridge between TonConnect and contract wrappers",
+  "description": "Helper hook for TON contracts to make a bridge between TonConnect and contract wrappers",
   "devDependencies": {
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
