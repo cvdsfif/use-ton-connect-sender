@@ -2,7 +2,6 @@ import { Network } from "@orbs-network/ton-access";
 import { Address, Contract, OpenedContract } from "@ton/core";
 import { useTonClient } from "./useTonClient";
 import { useAsyncInitialize } from "./useAsyncInitialize";
-import { useRef } from "react";
 
 type ContractFactory<T extends Contract> = {
     fromAddress: (address: Address) => T
