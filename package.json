@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@orbs-network/ton-access": "^2.3.3",
+    "@ton/core": "^0.57.0",
     "@ton/ton": "^15.0.0",
     "@tonconnect/ui-react": "^2.0.9",
     "react": "^18.3.1",
