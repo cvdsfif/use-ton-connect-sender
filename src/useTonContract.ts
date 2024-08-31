@@ -3,10 +3,20 @@ import { Address, Contract, OpenedContract } from "@ton/core";
 import { useTonClient } from "./useTonClient";
 import { useAsyncInitialize } from "./useAsyncInitialize";
 
-type ContractFactory<T extends Contract> = {
+/**
+ * Minimal definition of an object returning a TON contract wrapper
+ */
+export type ContractFactory<T extends Contract> = {
     fromAddress: (address: Address) => T
 }
 
+/**
+ * Asynchronously connects a TON contract on a given address after getting a TON client connection
+ * @param network `testnet` or `mainnet`
+ * @param unparsedAddress String representation of a TON contract's address
+ * @param factory Usually, the wrapper's constructor object
+ * @returns Opened version of the TON contract
+ */
 export const useTonContract = <T extends Contract>(
     network: Network,
     unparsedAddress: string,

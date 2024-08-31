@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "rm -rf dist && node build.js && tsc --emitDeclarationOnly --project tsconfig.node.json",
-    "test": "tsc --build --clean && jest $npm_config_dir && $(yarn bin)/coverage-badges"
+    "test": "tsc --build --clean && jest $npm_config_dir && npx coverage-badges"
   },
   "keywords": [
     "ton",
@@ -19,7 +19,7 @@
   ],
   "author": "Nikit Zykov",
   "license": "ISC",
-  "description": "Helper hook for TON contracts to make a bridge between TonConnect and contract wrappers",
+  "description": "Helper hooks for TON contracts to make a bridge between TonConnect and contract wrappers",
   "devDependencies": {
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",

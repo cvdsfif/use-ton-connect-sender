@@ -702,9 +702,6 @@ export class NzComTact implements Contract {
     }
 
     static fromAddress(address: Address) {
-        console.log("From address", address)
-        const contract = new NzComTact(address);
-        console.log("Contract", contract)
         return new NzComTact(address);
     }
 
