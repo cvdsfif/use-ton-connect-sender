@@ -1,5 +1,5 @@
 {
-  "name": "use-connect-sender",
+  "name": "use-ton-connect-sender",
   "version": "1.0.0-beta.3",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
